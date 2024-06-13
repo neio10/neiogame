@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuegoNeio10</title>
+    <script src="./js/javascript.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Dar ID para poder programar en Js-->
+    <section id="seleccionar-mascota">
+        <h1 class="titulo">NeioGame's</h1>
+        <h2 class="subtitulo">- Seleccione una mascota -</h2>
+        
+        <div class="tarjetas">
+            <label class="tarjeta-de-mokepon" for="hipodoge">
+            <img src="assets/hipodoge.png" alt="Hipodoge">
+            <p>Hipodoge</p>
+            </label>
+            <input type="radio" name="mascota" id="hipodoge"/>
+
+            <label class="tarjeta-de-mokepon" for="capipepo">
+                <img src="assets/capipepo.png" alt="capipepo">
+                <input type="radio" name="mascota" id="capipepo"/>
+                <p>Capipepo</p>
+            </label>
+
+            <label class="tarjeta-de-mokepon" for="ratigueya">
+                <img src="assets/ratigueya.png" alt="Ratigueya">
+                <input type="radio" name="mascota" id="ratigueya"/>
+                <p>Ratigueya<p>
+            </label>
+        </div>
+        
+        <div class="boton-centro">
+            <button id="boton-mascota">Seleccionar</button>
+        </div>
+    </section>
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo">NeioGame's</h1>
+        <h2 class="subtitulo">Selecciona el ataque:</h2>
+        <div class="tarjetas-ataques">
+            <button class="botones-ataque" id="boton-fuego">Fuego 🔥</button>
+            <button class="botones-ataque" id="boton-agua">Agua 💧</button>
+            <button class="botones-ataque" id="boton-tierra">Tierra 🌱</button>
+        </div>
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte😆</p>
+            <section id="reiniciar">
+                <button id="boton-reset">Reiniciar</button>
+            </section>
+        </div>
+
+        <div class="div-ataques">
+            <div>
+                <p id="vidas-jugador">3</p>
+                <p id="mascota-jugador"></p>
+                <div id="ataques-jugador"></div>
+                
+                
+            </div>
+            <div>
+                <p id="vidas-enemigo">3</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataques-enemigo"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

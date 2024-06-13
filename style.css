@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(fondo.jpg);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    font-size: 50px;
+    color: aliceblue;
+    text-shadow: 0 4px 4px black;
+    margin: 0px;
+}
+.subtitulo{
+    color: rgb(194, 194, 194);
+    text-shadow: 0 2px 2px rgb(0, 0, 0);
+}
+.tarjeta-de-mokepon{
+    border: 4px solid rgb(183, 207, 191);
+    width: 275px;
+    height: 240px;
+    border-radius: 10px;
+    background-color: rgba(80, 109, 88, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.tarjeta-de-mokepon img {
+    width: 170px;
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.boton-centro {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#boton-mascota{
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #506d58;
+    border: 2px solid rgb(183, 207, 191);
+    color: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: "Press Start 2P", system-ui;
+    cursor: pointer;
+}
+p{
+    color: aliceblue;
+}
+input{
+    display: none;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.botones-ataque{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #506d58;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(183, 207, 191);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#mensajes {
+    width: 240;
+    height: 70px;
+    background:rgba(80, 109, 88, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+#boton-reset{
+    font-family: "Press Start 2P", system-ui;
+    background-color: #506d58;
+    color: aliceblue;
+    width: 150px;
+    height: 40px;
+    border: 2px solid rgb(183, 207, 191);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-ataques{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    background-color: rgba(80, 109, 88, 0.8);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+#vidas-enemigo{
+    color: red;
+}
+#vidas-jugador{
+    color: red;
+}
+
+@media (max-width : 850px){
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 15px;
+    }
+    .tarjetas-ataques{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
