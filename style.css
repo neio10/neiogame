@@ -32,7 +32,7 @@ body{
 .tarjeta-de-mokepon{
     border: 4px solid rgb(183, 207, 191);
     width: 185px;
-    height: 175pxpx;
+    height: 200px;
     border-radius: 10px;
     background-color: rgba(80, 109, 88, 0.5);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -74,6 +74,9 @@ p{
 }
 input{
     display: none;
+}
+input:checked + label{
+    border: 4px solid rgb(42, 131, 42);
 }
 #seleccionar-ataque{
     flex-direction: column;
