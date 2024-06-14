@@ -141,6 +141,12 @@ input{
     .tarjetas{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        width: 185px;
+        height: 200px;
+    }
+    .tarjeta-de-mokepon img {
+    width: 120px;
     }
     .titulo{
         font-size: 30px;
